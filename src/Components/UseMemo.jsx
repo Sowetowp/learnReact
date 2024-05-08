@@ -9,6 +9,7 @@ const UseMemo = () => {
     const [num, setNum] = useState(0)
     const [count, setCount] = useState(0)
     const loo = useMemo(()=>looper(num),[])
+    
   return (
     <>
     <p>{count}</p>
