@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Component2 from './Component2'
+import { useDispatch } from 'react-redux'
+import { get_posts } from '../Redux/Action/UserAction'
 
 const Component1 = () => {
+  
   return (
     <>
     {/* {

@@ -6,6 +6,8 @@ import UseRef from './Components/UseRef'
 import Component1 from './Components/Component1'
 import UseCallBack from './Components/UseCallBack'
 import UseMemo from './Components/UseMemo'
+import ReduxSample from './Components/ReduxSample'
+import { Toaster } from 'react-hot-toast'
 
 export const myContext = createContext()
 const App = () => {
@@ -20,13 +22,16 @@ const App = () => {
       <Component4/> */}
       {/* <UseState/> */}
       {/* <UseRef/> */}
-      {/* <myContext.Provider value={{brand}}>
-        <Component1/>
-      </myContext.Provider> */}
+      {/* <myContext.Provider value={{brand}}> */}
+      {/* <Component1/> */}
+      {/* </myContext.Provider> */}
       {/* <UseCallBack counter={brand} setter={setter}/>
       <p>{counter}</p>
       <button onClick={()=>setCounter(counter + 1)}>app</button> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      <ReduxSample/>
+      <Toaster/>
+
     </>
   )
 }
